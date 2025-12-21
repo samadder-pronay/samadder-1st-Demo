@@ -3,9 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6c65194d91.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <p>Hello World!</p>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>Frontend</span> Designer</p>
+                <h1>Hi, I am <span>Pronay</span><br><span>Samadder</span> from Kolkata</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bg1.png.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hi, I'm Pronay. I'm a college student who enjoys learning and building things on the web. I'm currently exploring web development and improving my skills in both frontend and backend technologies. I like turning ideas into simple, functional, and clean digital experiences.<br>Apart from coding, I enjoy problem-solving, learning new technologies, and continuously improving my understanding of how things work under the hood. I believe in learning by doing, and most of my growth comes from experimenting, breaking things, and fixing them again.<br>I'm always open to learning, collaborating, and taking on new challenges that help me grow as a developer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Class X</span><br>Passed <span>(93.54%)</span></li>
+                            <li><span>Class XII</span><br>Passed <span>(88.8%)</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Youtuber</span><br>about <span>AMV</span> editing</li>
+                            <li><span>Editor</span><br>about <span>Photo & Video</span> editing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>Designing <span>Web</span> developement</li>
+                            <li><span>DSA</span><br>Doing in <span>C++</span></li>
+                            <li><span>Full Knowledge</span><br>About <span>C</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-square-web-awesome"></i>
+                    <h2>Web Design</h2>
+                    <p>I create visually clean and well-structured website designs that focus on clarity, usability, and consistency. My approach to web design is centered around understanding the purpose of the website and delivering layouts that communicate effectively with users. From color selection to typography and spacing, every element is chosen carefully to create a balanced and engaging design that works across all screen sizes.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gears"></i>
+                    <h2>Backend Design</h2>
+                    <p>I build reliable and scalable backend systems that handle data, logic, and application functionality efficiently. My backend development focuses on security, performance, and clean architecture to ensure smooth communication between the server, database, and frontend. From API development to database management, I design backend solutions that support long-term growth and stability.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css"></i>
+                    <h2>Frontend Design</h2>
+                    <p>I develop responsive and interactive frontend interfaces that provide a smooth and intuitive user experience. Using modern frontend technologies, I transform designs into functional layouts that are fast, accessible, and visually consistent. I focus on clean code, reusable components, and performance optimization to ensure the website feels seamless on both desktop and mobile devices.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png.jpg">
+                    <div class="layer">
+                        <h3>Youtube</h3>
+                        <p>I create and manage YouTube content focused on clean visuals, engaging presentation, and consistent branding.</p>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png.jpeg">
+                    <div class="layer">
+                        <h3>Linkdin</h3>
+                        <p>I actively use LinkedIn to build my professional presence, share insights, and showcase my learning journey.</p>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png.jpeg">
+                    <div class="layer">
+                        <h3>Github</h3>
+                        <p>I use GitHub to build, organize, and maintain my projects while continuously improving my coding practices.</p>
+                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> sample@121gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-1234567890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-reddit"></i></a>
+                    </div>
+                    <a href="images/information.pdf" download class="btn btn2">Information</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Feedback"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>"Copyright © 2025 Pronay <i class="fa-solid fa-shield-heart"></i>. All rights reserved".</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+             for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
